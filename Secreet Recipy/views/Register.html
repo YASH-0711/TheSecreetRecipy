@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/Register.css">
+</head>
+<body>
+    <section class="register">
+        <div class="con">
+            <h1 class="register-title">Registration</h1>
+            <form action="/register" method="POST" class="container">
+                <!-- <% if(messages.error) { %>
+                <span class="text-red-500 text-sm"><%= messages.error %></span>
+                <% } %> -->
+                <div class="con-1">
+                    <label class="la" for="username">
+                        Name
+                    </label>
+                    <input name="name" value="<%= messages.name  %>"
+                        class="in"
+                        id="username" type="text" placeholder="Enter your name">
+                </div>
+                <div class="con-1">
+                    <label class="la" for="username">
+                        Email
+                    </label>
+                    <input name="email" value="<%= messages.email  %>"
+                        class="in"
+                        id="username" type="email" placeholder="Enter your email">
+                </div>
+                <div class="con-2">
+                    <label class="la" for="password">
+                        Password
+                    </label>
+                    <input name="password"
+                        class="in"
+                        id="password" type="password" placeholder="******************">
+                </div>
+                <div class="con-2">
+                    <label class="la" for="password">
+                       Conform Password
+                    </label>
+                    <input name="ConPassword"
+                        class="in"
+                        id="ConPassword" type="password" placeholder="******************">
+                </div>
+                <div class="con-3">
+                    <button
+                        class="btn"
+                        type="submit">
+                        Register
+                    </button>
+                    <a class="a" href="/login.html">
+                        Already have account?
+                    </a>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+</body>
+</html>
